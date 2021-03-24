@@ -17,8 +17,8 @@ $ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/m
 
 ### powerlevel10k 설치
 ```bash
-$ git clone https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
-$ source ~/powerlevel10k/powerlevel10k.zsh-theme
+$ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
+$ echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>! ~/.zshrc
 ```
 
 ### 필요한 기능들 설치  
@@ -35,7 +35,7 @@ $ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh
 
 [plugin 목록에 plugin 추가하기]
 ```bash
-$ vi .zshric
+$ vi .zshrc
 ```
 ```bash
 plugins=(
